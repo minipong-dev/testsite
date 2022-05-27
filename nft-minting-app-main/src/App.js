@@ -124,6 +124,9 @@ function App() {
   const claimNFTs = () => {
     let cost = CONFIG.WEI_COST;
     let gasLimit = CONFIG.GAS_LIMIT;
+    if (blockchain.smartContract.methods.mintedCount(blockchain.account) == 0) {
+      mintAmount--;
+    }
     let totalCostWei = String(cost * mintAmount);
     let totalGasLimit = String(gasLimit * mintAmount);
     console.log("Cost: ", totalCostWei);
