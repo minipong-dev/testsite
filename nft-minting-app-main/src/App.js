@@ -120,6 +120,7 @@ function App() {
     SHOW_BACKGROUND: false,
   });
 
+  //MINT NFT FUNCTION
   const claimNFTs = () => {
     let cost = CONFIG.WEI_COST;
     let gasLimit = CONFIG.GAS_LIMIT;
@@ -129,6 +130,7 @@ function App() {
     console.log("Gas limit: ", totalGasLimit);
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
     setClaimingNft(true);
+    //.mint(blockchain.account, mintAmount)
     blockchain.smartContract.methods
       .mint(blockchain.account, mintAmount)
       .send({
@@ -302,7 +304,7 @@ function App() {
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
-                blockchain.smartContract === null ? (
+                  blockchain.smartContract === null ? (
                   <s.Container ai={"center"} jc={"center"}>
                     <s.TextDescription
                       style={{
