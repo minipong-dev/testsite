@@ -131,9 +131,8 @@ function App() {
     let totalGasLimit = String(gasLimit * mintAmount);
     console.log("Cost: ", totalCostWei);
     console.log("Gas limit: ", totalGasLimit);
-    console.log("1MINTED: ", blockchain.smartContract.methods.mintedCount(blockchain.account));
-
-    console.log("2MINTED: ", blockchain.smartContract.methods.mintedCount(blockchain.account).call());
+    console.log("1MINTED: ", await blockchain.smartContract.methods.mintedCount(blockchain.account).call().promiseResult());
+    console.log("2MINTED: ", await blockchain.smartContract.methods.mintedCount(blockchain.account).call());
 
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
     setClaimingNft(true);
