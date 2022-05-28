@@ -1,18 +1,18 @@
 {
-  "CONTRACT_ADDRESS": "0xd54c66bbff94b1098ae050fb9cd5b4e1f9a50231",
-  "SCAN_LINK": "https://etherscan.io/address/0xd54c66bbff94b1098ae050fb9cd5b4e1f9a50231",
+  "CONTRACT_ADDRESS": "0xec4bc89bfd527abf88d2080ea04b67c4149d14ce",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0xec4bc89bfd527abf88d2080ea04b67c4149d14ce",
   "NETWORK": {
-    "NAME": "Ethereum",
+    "NAME": "Rinkeby Ethereum",
     "SYMBOL": "ETH",
-    "ID": 1
+    "ID": 4
   },
-  "NFT_NAME": "BokiMfers",
-  "SYMBOL": "BMFER",
-  "MAX_SUPPLY": 3333,
-  "WEI_COST": 3000000000000000,
-  "DISPLAY_COST": 0.003,
+  "NFT_NAME": "clackCLACKclack",
+  "SYMBOL": "CLACK",
+  "MAX_SUPPLY": 2000,
+  "WEI_COST": 5000000000000000,
+  "DISPLAY_COST": 0.005,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opensea",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/bokimfers",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/clackclack",
   "SHOW_BACKGROUND": true
 }

@@ -1,79 +1,8 @@
 [
 	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "splitterAddress",
-				"type": "address"
-			}
-		],
+		"inputs": [],
 		"stateMutability": "nonpayable",
 		"type": "constructor"
-	},
-	{
-		"inputs": [],
-		"name": "ApprovalCallerNotOwnerNorApproved",
-		"type": "error"
-	},
-	{
-		"inputs": [],
-		"name": "ApprovalQueryForNonexistentToken",
-		"type": "error"
-	},
-	{
-		"inputs": [],
-		"name": "ApprovalToCurrentOwner",
-		"type": "error"
-	},
-	{
-		"inputs": [],
-		"name": "ApproveToCaller",
-		"type": "error"
-	},
-	{
-		"inputs": [],
-		"name": "BalanceQueryForZeroAddress",
-		"type": "error"
-	},
-	{
-		"inputs": [],
-		"name": "MintToZeroAddress",
-		"type": "error"
-	},
-	{
-		"inputs": [],
-		"name": "MintZeroQuantity",
-		"type": "error"
-	},
-	{
-		"inputs": [],
-		"name": "OwnerQueryForNonexistentToken",
-		"type": "error"
-	},
-	{
-		"inputs": [],
-		"name": "TransferCallerNotOwnerNorApproved",
-		"type": "error"
-	},
-	{
-		"inputs": [],
-		"name": "TransferFromIncorrectOwner",
-		"type": "error"
-	},
-	{
-		"inputs": [],
-		"name": "TransferToNonERC721ReceiverImplementer",
-		"type": "error"
-	},
-	{
-		"inputs": [],
-		"name": "TransferToZeroAddress",
-		"type": "error"
-	},
-	{
-		"inputs": [],
-		"name": "URIQueryForNonexistentToken",
-		"type": "error"
 	},
 	{
 		"anonymous": false,
@@ -171,7 +100,7 @@
 	},
 	{
 		"inputs": [],
-		"name": "MAX_NFT_PER_TRAN",
+		"name": "MAX_MINTS_PER_TX",
 		"outputs": [
 			{
 				"internalType": "uint256",
@@ -184,7 +113,7 @@
 	},
 	{
 		"inputs": [],
-		"name": "MINT_PRICE",
+		"name": "NUM_FREE_MINTS",
 		"outputs": [
 			{
 				"internalType": "uint256",
@@ -196,21 +125,16 @@
 		"type": "function"
 	},
 	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "to",
-				"type": "address"
-			},
+		"inputs": [],
+		"name": "PUBLIC_SALE_PRICE",
+		"outputs": [
 			{
 				"internalType": "uint256",
-				"name": "count",
+				"name": "",
 				"type": "uint256"
 			}
 		],
-		"name": "airdrop",
-		"outputs": [],
-		"stateMutability": "nonpayable",
+		"stateMutability": "view",
 		"type": "function"
 	},
 	{
@@ -251,26 +175,6 @@
 		"type": "function"
 	},
 	{
-		"inputs": [],
-		"name": "contractURI",
-		"outputs": [
-			{
-				"internalType": "string",
-				"name": "",
-				"type": "string"
-			}
-		],
-		"stateMutability": "pure",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "finalizeMetadata",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
 		"inputs": [
 			{
 				"internalType": "uint256",
@@ -284,6 +188,19 @@
 				"internalType": "address",
 				"name": "",
 				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getBaseURI",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
 			}
 		],
 		"stateMutability": "view",
@@ -315,20 +232,7 @@
 	},
 	{
 		"inputs": [],
-		"name": "isMetadataFinal",
-		"outputs": [
-			{
-				"internalType": "bool",
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "isPaused",
+		"name": "isPublicSaleActive",
 		"outputs": [
 			{
 				"internalType": "bool",
@@ -356,32 +260,13 @@
 		"inputs": [
 			{
 				"internalType": "uint256",
-				"name": "count",
+				"name": "numberOfTokens",
 				"type": "uint256"
 			}
 		],
 		"name": "mint",
 		"outputs": [],
 		"stateMutability": "payable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "owner",
-				"type": "address"
-			}
-		],
-		"name": "mintedCount",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
 		"type": "function"
 	},
 	{
@@ -392,6 +277,19 @@
 				"internalType": "string",
 				"name": "",
 				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "nextOwnerToExplicitlySet",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
 			}
 		],
 		"stateMutability": "view",
@@ -431,32 +329,6 @@
 	},
 	{
 		"inputs": [],
-		"name": "prerevealURL",
-		"outputs": [
-			{
-				"internalType": "string",
-				"name": "",
-				"type": "string"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "newMaxSupply",
-				"type": "uint256"
-			}
-		],
-		"name": "reduceSupply",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [],
 		"name": "renounceOwnership",
 		"outputs": [],
 		"stateMutability": "nonpayable",
@@ -465,14 +337,30 @@
 	{
 		"inputs": [
 			{
-				"internalType": "string",
-				"name": "url",
-				"type": "string"
+				"internalType": "uint256",
+				"name": "tokenId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "salePrice",
+				"type": "uint256"
 			}
 		],
-		"name": "reveal",
-		"outputs": [],
-		"stateMutability": "nonpayable",
+		"name": "royaltyInfo",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "receiver",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "royaltyAmount",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
 		"type": "function"
 	},
 	{
@@ -547,12 +435,51 @@
 	{
 		"inputs": [
 			{
+				"internalType": "string",
+				"name": "_baseURI",
+				"type": "string"
+			}
+		],
+		"name": "setBaseURI",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
 				"internalType": "bool",
-				"name": "value",
+				"name": "_isOpenSeaProxyActive",
 				"type": "bool"
 			}
 		],
-		"name": "setPause",
+		"name": "setIsOpenSeaProxyActive",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bool",
+				"name": "_isPublicSaleActive",
+				"type": "bool"
+			}
+		],
+		"name": "setIsPublicSaleActive",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_numfreemints",
+				"type": "uint256"
+			}
+		],
+		"name": "setNumFreeMints",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -584,6 +511,49 @@
 				"internalType": "string",
 				"name": "",
 				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "index",
+				"type": "uint256"
+			}
+		],
+		"name": "tokenByIndex",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "index",
+				"type": "uint256"
+			}
+		],
+		"name": "tokenOfOwnerByIndex",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
 			}
 		],
 		"stateMutability": "view",
@@ -660,6 +630,19 @@
 	{
 		"inputs": [],
 		"name": "withdraw",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "contract IERC20",
+				"name": "token",
+				"type": "address"
+			}
+		],
+		"name": "withdrawTokens",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
