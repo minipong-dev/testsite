@@ -228,7 +228,7 @@ function App() {
                 ai={"center"}
                 style={{ padding: 74, backgroundColor: "var(--primary)" }}
 
-                image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.gif" : null}
+                image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.jpeg" : null}
 
 
 
@@ -337,14 +337,12 @@ function App() {
                                         color: "var(--accent-text)",
                                         fontFamily: "comic sans ms",
                                         fontWeight: "bold",
+                                        textShadow: "2px 2px red",
                                     }}
                                 >
 
-                                    clackCLACKclackCLACKclackCLACKclackCLACKclack
-                                    <br /> do u know da wae?
+                                    Squiggles by Damers, are an on chain collection of 2222 funny looking Squiggles
                                     <br />
-                                    <br />
-                                    Instant Reveal!
 
 
 
@@ -549,8 +547,8 @@ function App() {
 
                     </s.TextDescription>
                 </s.Container>
-            </s.Container>
-        </s.Screen>
+            </s.Container >
+        </s.Screen >
     );
 }
 
