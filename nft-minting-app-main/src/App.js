@@ -273,7 +273,7 @@ function App() {
                                 textAlign: "center",
                                 fontSize: 40,
                                 fontWeight: "bold",
-                                color: "#0000ff",
+                                color: "var(--accent-text)",
                                 fontFamily: "comic sans ms",
 
                             }}
@@ -317,7 +317,7 @@ function App() {
 
                                     style={{
                                         textAlign: "center",
-                                        color: "#0000ff",
+                                        color: "var(--accent-text)",
                                         fontFamily: "comic sans ms",
                                     }}
                                 >
@@ -334,10 +334,10 @@ function App() {
                                 <s.TextTitle
                                     style={{
                                         textAlign: "center",
-                                        color: "#0000ff",
+                                        color: "var(--accent-text)",
                                         fontFamily: "comic sans ms",
                                         fontWeight: "bold",
-                                        textShadow: "2px 2px red",
+                                        textShadow: "2px 2px blue",
                                     }}
                                 >
 
@@ -355,7 +355,7 @@ function App() {
                                 <s.TextDescription
                                     style={{
                                         textAlign: "center",
-                                        color: "#0000ff",
+                                        color: "var(--accent-text)",
                                         fontFamily: "comic sans ms",
                                     }}
                                 >
@@ -370,7 +370,7 @@ function App() {
 
                                             style={{
                                                 textAlign: "center",
-                                                color: "#0000ff",
+                                                color: "var(--accent-text)",
                                                 fontFamily: "comic sans ms",
                                             }}
                                         >
@@ -397,7 +397,7 @@ function App() {
 
                                                     style={{
                                                         textAlign: "center",
-                                                        color: "#0000ff",
+                                                        color: "var(--accent-text)",
                                                         fontFamily: "comic sans ms",
                                                     }}
                                                 >
@@ -412,7 +412,7 @@ function App() {
 
                                             style={{
                                                 textAlign: "center",
-                                                color: "#0000ff",
+                                                color: "var(--accent-text)",
                                                 fontFamily: "comic sans ms",
                                             }}
                                         >
@@ -436,7 +436,7 @@ function App() {
 
                                                 style={{
                                                     textAlign: "center",
-                                                    color: "#0000ff",
+                                                    color: "var(--accent-text)",
                                                     fontFamily: "comic sans ms",
                                                 }}
                                             >
