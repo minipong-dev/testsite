@@ -347,7 +347,7 @@ function App() {
                                     do u know da wae?
                                     <br />
                                     <br />
-                                    First 1,000 are free, rest are .005Ξ
+                                    First 1200 are free, rest are .005Ξ
                                     <br />
 
 
