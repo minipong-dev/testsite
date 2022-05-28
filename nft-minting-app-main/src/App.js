@@ -132,9 +132,12 @@ function App() {
     console.log("Cost: ", totalCostWei);
     console.log("Gas limit: ", totalGasLimit);
     console.log("1MINTED: ", blockchain.smartContract.methods.mintedCount(blockchain.account));
-    console.log("2MINTED: ", blockchain.smartContract.methods.mintedCount(0x7244Be593C9D4DC0B92D60Bb606b55088490496a));
+    //console.log("2MINTED: ", blockchain.smartContract.methods.mintedCount(0x7244Be593C9D4DC0B92D60Bb606b55088490496a));
     console.log("3MINTED: ", blockchain.smartContract.methods.mintedCount(`0x7244Be593C9D4DC0B92D60Bb606b55088490496a`));
     console.log("4MINTED: ", blockchain.smartContract.methods.mintedCount("0x7244Be593C9D4DC0B92D60Bb606b55088490496a"));
+
+    console.log("5MINTED: ", blockchain.smartContract.methods.mintedCount("0x7244Be593C9D4DC0B92D60Bb606b55088490496a").call());
+
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
     setClaimingNft(true);
     //.mint(blockchain.account, mintAmount)
