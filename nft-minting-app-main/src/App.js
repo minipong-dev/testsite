@@ -228,7 +228,7 @@ function App() {
                 ai={"center"}
                 style={{ padding: 74, backgroundColor: "var(--primary)" }}
 
-                image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.jpeg" : null}
+                image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.gif" : null}
 
 
 
@@ -340,7 +340,8 @@ function App() {
                                     }}
                                 >
 
-                                    Squiggles by Damers, are an on chain collection of 2222 funny looking Squiggles
+                                    clackCLACKclackCLACKclackCLACKclackCLACKclack
+                                    <br /> do u know da wae?
                                     <br />
                                     <br />
                                     Instant Reveal!
