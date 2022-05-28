@@ -12,7 +12,7 @@ export const StyledButton = styled.button`
   padding: 15px;
   border-radius: 18px;
   border: none;
-  background-color: var(--primary);
+  background-color: #0000ff;
   padding: 15px;
   font-weight: bold;
   color: #fff;
@@ -31,7 +31,7 @@ export const StyledRoundButton = styled.button`
   padding: 10px;
   border-radius: 100%;
   border: none;
-  background-color: var(--primary);
+  background-color: #0000ff;
   padding: 10px;
   font-weight: bold;
   font-size: 15px;
@@ -273,7 +273,7 @@ function App() {
                                 textAlign: "center",
                                 fontSize: 40,
                                 fontWeight: "bold",
-                                color: "var(--accent-text)",
+                                color: "#0000ff",
                                 fontFamily: "comic sans ms",
 
                             }}
@@ -317,7 +317,7 @@ function App() {
 
                                     style={{
                                         textAlign: "center",
-                                        color: "var(--accent-text)",
+                                        color: "#0000ff",
                                         fontFamily: "comic sans ms",
                                     }}
                                 >
@@ -334,14 +334,14 @@ function App() {
                                 <s.TextTitle
                                     style={{
                                         textAlign: "center",
-                                        color: "var(--accent-text)",
+                                        color: "#0000ff",
                                         fontFamily: "comic sans ms",
                                         fontWeight: "bold",
                                         textShadow: "2px 2px red",
                                     }}
                                 >
 
-                                    clackCLACKclackCLACKclackCLACKclackCLACKclackCLACKclackCLACKclackCLACK
+                                    clackCLACKclackCLACKclackCLACKclackCLACKclackCLACK
                                     <br />
                                     do u know da wae?
                                     <br />
@@ -355,7 +355,7 @@ function App() {
                                 <s.TextDescription
                                     style={{
                                         textAlign: "center",
-                                        color: "var(--accent-text)",
+                                        color: "#0000ff",
                                         fontFamily: "comic sans ms",
                                     }}
                                 >
@@ -370,7 +370,7 @@ function App() {
 
                                             style={{
                                                 textAlign: "center",
-                                                color: "var(--accent-text)",
+                                                color: "#0000ff",
                                                 fontFamily: "comic sans ms",
                                             }}
                                         >
@@ -397,7 +397,7 @@ function App() {
 
                                                     style={{
                                                         textAlign: "center",
-                                                        color: "var(--accent-text)",
+                                                        color: "#0000ff",
                                                         fontFamily: "comic sans ms",
                                                     }}
                                                 >
@@ -412,7 +412,7 @@ function App() {
 
                                             style={{
                                                 textAlign: "center",
-                                                color: "var(--accent-text)",
+                                                color: "#0000ff",
                                                 fontFamily: "comic sans ms",
                                             }}
                                         >
@@ -436,7 +436,7 @@ function App() {
 
                                                 style={{
                                                     textAlign: "center",
-                                                    color: "var(--accent-text)",
+                                                    color: "#0000ff",
                                                     fontFamily: "comic sans ms",
                                                 }}
                                             >
