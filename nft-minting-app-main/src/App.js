@@ -228,7 +228,7 @@ function App() {
                 ai={"center"}
                 style={{ padding: 74, backgroundColor: "var(--primary)" }}
 
-                image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.gif" : null}
+                image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.jpg" : null}
 
 
 
