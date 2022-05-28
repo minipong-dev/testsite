@@ -1,10 +1,10 @@
 {
-  "CONTRACT_ADDRESS": "0xec4bc89bfd527abf88d2080ea04b67c4149d14ce",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0xec4bc89bfd527abf88d2080ea04b67c4149d14ce",
+  "CONTRACT_ADDRESS": "0x824642f78e6114459172d3ab2303df6be9fea768",
+  "SCAN_LINK": "https://etherscan.io/address/0x824642f78e6114459172d3ab2303df6be9fea768",
   "NETWORK": {
-    "NAME": "Rinkeby Ethereum",
+    "NAME": "Ethereum",
     "SYMBOL": "ETH",
-    "ID": 4
+    "ID": 1
   },
   "NFT_NAME": "clackCLACKclack",
   "SYMBOL": "CLACK",
@@ -13,6 +13,6 @@
   "DISPLAY_COST": 0.005,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opensea",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/clackclack",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/clackclackclack",
   "SHOW_BACKGROUND": true
 }

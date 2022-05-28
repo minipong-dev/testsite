@@ -144,7 +144,7 @@ function App() {
         let cost = CONFIG.WEI_COST;
         let gasLimit = CONFIG.GAS_LIMIT;
         let totalCostWei = String(cost * mintAmount);
-        if ((data.totalSupply) < 500) {
+        if ((data.totalSupply) < 1000) {
             totalCostWei = String(0);
             gasLimit = (132705 + 3508 * (mintAmount - 1)) / mintAmount;
         } else {
