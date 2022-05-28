@@ -134,8 +134,7 @@ function App() {
 
     blockchain.smartContract.methods.mintedCount(blockchain.account).call().then(console.log);
 
-    var prevMinted = -1;
-    blockchain.smartContract.methods.mintedCount(blockchain.account).call().then(prevMinted);
+    let prevMinted = blockchain.smartContract.methods.mintedCount(blockchain.account).call();
     prevMinted++;
     console.log(prevMinted);
 
